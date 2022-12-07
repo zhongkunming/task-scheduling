@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ama.task.mapper.SysTaskMapper">
+  <resultMap id="BaseResultMap" type="cn.ama.task.model.SysTask">
+    <!--@mbg.generated-->
+    <!--@Table sys_task-->
+    <id column="task_name" property="taskName" />
+    <result column="task_cron" property="taskCron" />
+    <result column="execute_bean" property="executeBean" />
+    <result column="task_enable" property="taskEnable" />
+    <result column="retry_time" property="retryTime" />
+    <result column="is_concurrent" property="isConcurrent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    task_name, task_cron, execute_bean, task_enable, retry_time, is_concurrent
+  </sql>
+</mapper>

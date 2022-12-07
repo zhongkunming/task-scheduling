@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.ama.task.mapper.SysTaskLogMapper">
+  <resultMap id="BaseResultMap" type="cn.ama.task.model.SysTaskLog">
+    <!--@mbg.generated-->
+    <!--@Table sys_task_log-->
+    <result column="server_name" property="serverName" />
+    <result column="task_name" property="taskName" />
+    <result column="schedule_id" property="scheduleId" />
+    <result column="sucess" property="sucess" />
+    <result column="schedule_time" property="scheduleTime" />
+    <result column="exception_message" property="exceptionMessage" />
+    <result column="exception_stack" property="exceptionStack" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    `server_name`, task_name, schedule_id, sucess, schedule_time, exception_message, 
+    exception_stack
+  </sql>
+</mapper>
